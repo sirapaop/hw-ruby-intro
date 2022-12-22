@@ -9,6 +9,11 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  arr.sort! {|first, second| second <=> first}
+  print arr
+  sum arr[0] + arr[1]
+  print "\nthe sum of its two largest elements is #{sum}"
+
 end
 
 def sum_to_n? arr, n
