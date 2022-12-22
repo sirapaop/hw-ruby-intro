@@ -69,7 +69,17 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  
+  if s.length == 0
+    return false
+  else
+    arr = ['0', '1', ' ']
+    for i in arr do
+      if s == arr
+        return true
+      end
+    end
+    return false
+  end
 end
 
 # Part 3
