@@ -86,4 +86,15 @@ end
 
 class BookInStock
 # YOUR CODE HERE
+  attr_reader :isbn
+  attr_reader :price
+  
+  attr_writer :isbn
+  attr_writer :price
+  def initialize(isbn, price)
+      @isbn = isbn
+      @price = price
+
+  end
+
 end
