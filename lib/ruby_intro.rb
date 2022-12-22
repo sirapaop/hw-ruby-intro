@@ -98,6 +98,10 @@ class BookInStock
         return raise ArgumentError
       end
   end
-  
+  def price_as_string
+    
+    a = '%.2f' % @price
+    return "$#{a}" 
+  end
 
 end
