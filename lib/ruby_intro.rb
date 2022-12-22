@@ -9,15 +9,20 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
-  arr.sort! {|first, second| second <=> first}
-  print arr
-  sum arr[0] + arr[1]
-  print "\nthe sum of its two largest elements is #{sum}"
-
+  if arr.length == 0
+    return 0
+  elsif arr.length == 1
+    return arr[0]
+  else
+    arr.sort! {|first, second| second <=> first}
+    sum = arr[0] + arr[1]
+    return sum
+  end
 end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  
 end
 
 # Part 2
