@@ -52,10 +52,24 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
+  if s.length == 0
+    return false
+  else
+    first = s.chr
+    first.downcase
+    arr = ['a','e','i','o','u', '#','U']
+    for i in arr do
+      if first == i
+        return false 
+      end 
+    end
+    return true
+  end
 end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  
 end
 
 # Part 3
