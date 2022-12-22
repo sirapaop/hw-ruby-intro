@@ -22,7 +22,25 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
-  
+  sum_arr = []
+  if arr.length == 0
+    return false
+  elsif arr.length == 1
+    return false
+
+  else
+    arr.each do |i|
+      arr.each do |j|
+        if i != j
+          sum = i + j
+          if n == sum
+            return true
+          end
+        end
+      end
+    end
+    return false
+  end  
 end
 
 # Part 2
