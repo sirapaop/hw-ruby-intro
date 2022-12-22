@@ -69,18 +69,21 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-  if s.length == 0
+  s = s.delete(" ")
+  if s == "" 
     return false
-  else
-    arr = ['0', '1', ' ']
-    for i in arr do
-      if s == arr
-        return true
-      end
+
+  elsif s.delete('01') == ''
+    if s.to_i(2) % 4 == 0
+      return true
+    else
+      return false
     end
+  else
     return false
   end
 end
+  
 
 # Part 3
 
