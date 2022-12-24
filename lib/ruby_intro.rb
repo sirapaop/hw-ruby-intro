@@ -70,7 +70,7 @@ end
 def binary_multiple_of_4? s
   # YOUR CODE HERE
   s = s.delete(" ")
-  if s == "" 
+  if s.length == 0
     return false
 
   elsif s.delete('01') == ''
